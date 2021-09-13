@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/dashboard_background"
+    tools:context=".Common.DoctorScreens.PatientDetailsScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back_pressed"
+                android:onClick="gotoPreviousActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/general_back_icon"
+                app:iconTint="@color/black"
+                app:backgroundTint="#00000000"
+                style="@style/Widget.AppCompat.Toolbar.Button.Navigation"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Patient Name"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Gender"
+                android:fontFamily="@font/muli_extralight"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="age"
+                android:fontFamily="@font/muli_extralight"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+            <com.google.android.material.circularreveal.CircularRevealGridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:outlineSpotShadowColor="@color/black"
+                android:columnOrderPreserved="false"
+                android:alignmentMode="alignMargins">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:layout_width="74dp"
+                            android:layout_height="78dp"
+                            android:src="@drawable/patient_profile_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textSize="13sp"
+                            android:text="Profile"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:onClick="goToPatientProfile"
+                        android:id="@+id/profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:backgroundTint="#00000000"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="16sp">
+
+
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/symptoms_icon"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textSize="13sp"
+                            android:text="Symptoms"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:onClick="goToSymptomDetails"
+                        android:id="@+id/symptoms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:backgroundTint="#00000000"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+<!--                <androidx.cardview.widget.CardView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:layout_columnWeight="1"-->
+<!--                       app:cardElevation="8dp"-->
+<!--                       app:cardCornerRadius="8dp"-->
+<!--                       android:layout_margin="10dp">-->
+
+<!--                       <LinearLayout-->
+<!--                           android:layout_width="match_parent"-->
+<!--                           android:layout_height="match_parent"-->
+<!--                           android:orientation="vertical"-->
+<!--                           android:gravity="center"-->
+<!--                           android:padding="16sp">-->
+
+<!--                           <ImageView-->
+<!--                               android:layout_width="80dp"-->
+<!--                               android:layout_height="80dp"-->
+<!--                               android:src="@drawable/visits"/>-->
+
+<!--                           <TextView-->
+<!--                               android:layout_width="wrap_content"-->
+<!--                               android:layout_height="wrap_content"-->
+<!--                               android:layout_marginTop="12dp"-->
+<!--                               android:textSize="13sp"-->
+<!--                               android:text="Visits"/>-->
+
+
+<!--                       </LinearLayout>-->
+
+<!--                   </androidx.cardview.widget.CardView>-->
+
+
+            </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

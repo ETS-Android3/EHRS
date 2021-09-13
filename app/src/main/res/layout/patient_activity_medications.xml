@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Common.PatientScreens.Medications"
+    android:background="@color/cardview_light_background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/back_pressed"
+                android:onClick="gotoPreviousActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/general_back_icon"
+                app:iconTint="@color/black"
+                app:backgroundTint="#00000000"
+                android:layout_centerVertical="true"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/signup_title_text"
+                android:layout_marginLeft="140dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/muli_black"
+                android:text="MEDICATIONS"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/cv">
+
+                <ImageView
+                    android:id="@+id/currentmedicationimage"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/current_medications"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/currentmedicationimage"
+                    android:fontFamily="@font/baloo"
+                    android:padding="5dp"
+                    android:text="Current Medications"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView><RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="190dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/medical_bg2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:padding="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="Add Medicinal Remainder"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="35sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-2dp"
+                android:src="@drawable/medicine_reminder_icon" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

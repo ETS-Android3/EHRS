@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shub.ehrs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:permission=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Common.DoctorScreens.SymptomNotification"></activity>
+        <activity android:name=".Common.PatientScreens.ShowDoctorProfile" />
+        <activity android:name=".Common.PatientScreens.ShowActivity" />
+        <activity android:name=".Common.PatientScreens.uploadimage" />
+        <activity android:name=".Common.DoctorScreens.DoctorProfileScreen" />
+        <activity android:name=".Common.DoctorScreens.ViewReportScreen" />
+        <activity android:name=".Common.DoctorScreens.AddPrescriptionScreen" />
+        <activity android:name=".Common.DoctorScreens.ViewPatientSymptomDetails" />
+        <activity android:name=".Common.DoctorScreens.AddDiagnosisScreen" />
+        <activity android:name=".Common.DoctorScreens.ViewPatientSymptomsScreen" />
+        <activity android:name=".Common.DoctorScreens.ViewPatientProfile" />
+        <activity android:name=".Common.DoctorScreens.PatientDetailsScreen" />
+        <activity android:name=".Common.DoctorScreens.SearchPatientScreen" />
+        <activity android:name=".Common.DoctorScreens.DoctorDashboardScreen" />
+        <activity android:name=".Common.PatientScreens.PatientProfileScreen" />
+        <activity android:name=".Common.PatientScreens.AddSymptoms" />
+        <activity android:name=".Common.PatientScreens.PatientReportsScreen" />
+        <activity android:name=".Common.PatientScreens.PatientDiagnosisScreen" />
+        <activity android:name=".Common.PatientScreens.PatientPrescriptionScreen" />
+        <activity android:name=".Common.PatientScreens.SymptomDetails" />
+        <activity android:name=".Common.PatientScreens.symptomscreen" />
+        <activity android:name=".Common.PatientScreens.Medications" />
+        <activity android:name=".Common.PatientScreens.PatientDashboardScreen" />
+        <activity android:name=".Common.LoginSignup.SetNewPassword" />
+        <activity android:name=".Common.LoginSignup.VerifyOTP" />
+        <activity android:name=".Common.LoginSignup.MakeSelection" />
+        <activity android:name=".Common.LoginSignup.ForgetPasswordSuccessMessage" />
+        <activity android:name=".Common.LoginSignup.ForgetPassword" />
+        <activity android:name=".Common.LoginSignup.Signup2ndClass" />
+        <activity android:name=".Common.LoginSignup.Signup3ndClass" />
+        <activity android:name=".Common.LoginSignup.Signup" />
+        <activity android:name=".Common.LoginSignup.Login" />
+        <activity android:name=".Common.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

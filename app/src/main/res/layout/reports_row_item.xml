@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/report_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/reports_icon3"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/report_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/report_icon"
+        android:fontFamily="@font/nunito_bold"
+        android:text="dd/mm/yy"
+        android:textColor="#555555"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/report_icon" />
+
+    <TextView
+        android:id="@+id/report_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/report_icon"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="dd/mm/yy"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/report_icon" />
+
+
+    <TextView
+        android:id="@+id/report_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_date"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_toEndOf="@+id/report_icon"
+        android:fontFamily="@font/muli_extralight"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        android:textColor="#999999"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/report_icon" />
+
+
+
+</RelativeLayout>

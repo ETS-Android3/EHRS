@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070897188934",
+    "project_id": "ehrs-83560",
+    "storage_bucket": "ehrs-83560.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070897188934:android:0070eaabed8b649e377a47",
+        "android_client_info": {
+          "package_name": "com.shub.ehrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070897188934-0hdhie9tuehgo3078rjeefi78td9qo6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlK5XqRQ10eD9MJ2_BseSdeoif3iTSetA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070897188934-0hdhie9tuehgo3078rjeefi78td9qo6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">EHRS</string>
+    <string name="ehrs">EHRS</string>
+
+
+    <!-- General Strings-->
+    <string name="sign_up">Sign Up</string>
+    <string name="retailer_heading">Grow\nYour Business</string>
+    <string name="retailer_tag_line">We will help you to grow your business using oline services!</string>
+    <string name="create_account">Create\nAccount</string>
+    <string name="how_we_work">How we work?</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forget_password">Forgot Password</string>
+
+    <!--  Login   -->
+    <string name="login">LOGIN</string>
+    <string name="profile">PROFILE</string>
+    <string name="logout">LOGOUT</string>
+
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+
+    <!--  SignUP-->
+    <string name="enter_full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="enter_email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter_phone_no">Phone Number</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="navigatetologin">ALREADY HAVE AN ACCOUNT?</string>
+    <string name="next_btn">NEXT</string>
+
+    <!--    OTP Screen-->
+    <string name="otp_code_text">co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on\n+918552049130 </string>
+
+    <!--    forget password-->
+    <string name="forget_password_description">Provide your account\'s email for which you want to reset your password </string>
+
+    <!--Make selection-->
+    <string name="make_selection">MAKE SELECTION</string>
+    <string name="make_selection_description">Select which contact detail should we use to reset your password? </string>
+    <string name="sms_title">via sms:</string>
+    <string name="mail_title">via mail:</string>
+    <string name="new_credentials">NEW\nCREDENTIALS</string>
+    <string name="new_credentials_detail">Your identity has been verified!\nSet your new password</string>
+
+    <!--    Password Updated-->
+    <string name="password_updated_text">Password\nUpdated</string>
+    <string name="password_updated_success_message">your password has been updated!</string>
+
+    <!--    Medications-->
+    <string name="add_medicinal_remainder">\t\t\t\tAdd\nMedicinal\nRemainder</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
